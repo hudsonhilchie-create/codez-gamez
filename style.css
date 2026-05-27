@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0b0f1a;
+  color: white;
+}
+
+.layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background: #111827;
+  height: 100vh;
+  padding: 15px;
+}
+
+.sidebar button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  background: #1f2937;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.sidebar button:hover {
+  background: #3b82f6;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+#search {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: #111827;
+  padding: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #1f2937;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+}
+
+.modalBox {
+  width: 90%;
+  height: 90%;
+  margin: 2% auto;
+  background: #0f172a;
+  padding: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 90%;
+  border: none;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
